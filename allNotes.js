@@ -1,0 +1,51 @@
+export let allNotes = [
+    {
+      id: 1,
+      name: "Shopping List",
+      created: "Sat Sep 10 2022",
+      category: "Task",
+      content: "Tomatoes, bread",
+    },
+    {
+      id: 2,
+      name: "The theory of evolution",
+      created: "Fri Sep 9 2022",
+      category: "Random Thoughts",
+      content: "The Evolution...",
+    },
+    {
+      id: 3,
+      name: "New feature",
+      created: "Thu Sep 8 2022",
+      category: "Idea",
+      content: "Implement new...",
+    },
+    {
+      id: 4,
+      name: "William Gaddis",
+      created: "Wen Sep 7 2022",
+      category: "Quote",
+      content: "Power doesn't co...",
+    },
+    {
+      id: 5,
+      name: "Books",
+      created: "Tue Sep 6 2022",
+      category: "Task",
+      content: "The Lean StartUp",
+    },
+    {
+      id: 6,
+      name: "Exam",
+      created: "Sun Sep 4 2022",
+      category: "Task",
+      content: "Prepare for the final exam",
+    },
+    {
+      id: 7,
+      name: "Unknown Author",
+      created: "Sat Sep 10 2022",
+      category: "Quote",
+      content: "Keep learning, stay motivated",
+    },
+  ];
