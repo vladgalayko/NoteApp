@@ -4,25 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>Note App</title>
+
 </head>
 <body>
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Created</th>
-            <th>Category</th>
-            <th>Content</th>
-            <th>Dates</th>
-            <th>Edit</th>
-            <th>Archive</th>
-            <th>Remove</th>
-        </tr>
-    </table>
-    <table class="table-notes">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Created</th>
+                <th>Category</th>
+                <th>Content</th>
+                <th>Dates</th>
+                <th>Edit</th>
+                <th>Archive</th>
+                <th>Remove</th>
+            </tr>
+        </thead> 
+        <tbody class="table-notes">
 
+        </tbody>
     </table>
-    <!-- <form>
+    <form>
         <label for="name">Name</label>
         <input type="text" id="name">
         <select name="select" id="category">
@@ -31,13 +36,18 @@
             <option value="idea">Idea</option>
         </select>
         <button>Create note</button>
-    </form> -->
-    <table>
-        <tr>
-            <th>Note Category</th>
-            <th>Active</th>
-            <th>Archived</th>
-        </tr>
+    </form>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Note Category</th>
+                <th>Active</th>
+                <th>Archived</th>
+            </tr>
+        </thead>    
+        <tbody class="archive-table-notes">
+
+        </tbody>
     </table>
     <script src="./script.js" type="module"></script>
 </body>

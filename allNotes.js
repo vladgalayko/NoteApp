@@ -1,3 +1,4 @@
+export let archivedNotes = []
 export let allNotes = [
     {
       id: 1,
@@ -5,6 +6,8 @@ export let allNotes = [
       created: "Sat Sep 10 2022",
       category: "Task",
       content: "Tomatoes, bread",
+      archived: false,
+      active: true,
     },
     {
       id: 2,
@@ -12,6 +15,8 @@ export let allNotes = [
       created: "Fri Sep 9 2022",
       category: "Random Thoughts",
       content: "The Evolution...",
+      archived: false,
+      active: true,
     },
     {
       id: 3,
@@ -19,6 +24,8 @@ export let allNotes = [
       created: "Thu Sep 8 2022",
       category: "Idea",
       content: "Implement new...",
+      archived: false,
+      active: true,
     },
     {
       id: 4,
@@ -26,6 +33,8 @@ export let allNotes = [
       created: "Wen Sep 7 2022",
       category: "Quote",
       content: "Power doesn't co...",
+      archived: false,
+      active: true,
     },
     {
       id: 5,
@@ -33,6 +42,8 @@ export let allNotes = [
       created: "Tue Sep 6 2022",
       category: "Task",
       content: "The Lean StartUp",
+      archived: false,
+      active: true,
     },
     {
       id: 6,
@@ -40,6 +51,8 @@ export let allNotes = [
       created: "Sun Sep 4 2022",
       category: "Task",
       content: "Prepare for the final exam",
+      archived: false,
+      active: true,
     },
     {
       id: 7,
@@ -47,5 +60,7 @@ export let allNotes = [
       created: "Sat Sep 10 2022",
       category: "Quote",
       content: "Keep learning, stay motivated",
+      archived: false,
+      active: true,
     },
   ];
