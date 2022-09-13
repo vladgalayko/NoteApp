@@ -29,16 +29,32 @@
 
         </tbody>
     </table>
-    <form>
-        <label for="name">Name</label>
-        <input type="text" id="name">
-        <select name="select" id="category">
-            <option value="task">Task</option>
-            <option value="random">Random Thought</option>
-            <option value="idea">Idea</option>
-        </select>
-        <button>Create note</button>
-    </form>
+    <section class="form section--container">
+        <form id="form">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Note-name"
+          />
+          <label for="category">Category</label>
+          <select id="category">
+            <option value="Task">Task</option>
+            <option value="Random Thoughts">Random Thoughts</option>
+            <option value="Idea">Idea</option>
+            <option value="Quote">Quote</option>
+            <option value="Other">Other</option>
+          </select>
+          <label for="content">Content</label>
+          <input
+          type="text"
+            id="content"
+            placeholder="Content"
+          ></input>
+
+          <button id="add-note">Create note</button>
+        </form>
+      </section>
     <table class="table table-hover">
         <thead>
             <tr>
