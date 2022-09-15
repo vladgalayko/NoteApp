@@ -5,24 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
-    <link rel="stylesheet" href="style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style/style.css">
+
     <title>Note App</title>
 
 </head>
-<body>
+<body class="body">
     <table class="table table-hover">
-        <thead>
-            <tr>
+        <thead class="thead">
+            <tr class="trhead">
                 <th>Name</th>
                 <th>Created</th>
                 <th>Category</th>
                 <th>Content</th>
                 <th>Dates</th>
-                <th>Edit</th>
-                <th>Archive</th>
-                <th>Remove</th>
+                <th><i class="bi bi-pen"></i></th>
+                <th><i class="bi bi-archive-fill"></i></th>
+                <th><i class="bi bi-trash"></i></th>
             </tr>
         </thead> 
         <tbody class="table-notes">
@@ -30,7 +31,7 @@
         </tbody>
     </table>
     <section class="form section--container">
-        <form id="form">
+        <form class="form "id="form">
           <label for="name">Name</label>
           <input
             type="text"
@@ -52,15 +53,20 @@
             placeholder="Content"
           ></input>
 
-          <button id="add-note">Create note</button>
+          <button class="btn btn-secondary" id="add-note">Create note</button>
         </form>
       </section>
     <table class="table table-hover">
         <thead>
-            <tr>
+            <tr  class="thead">
                 <th>Note Category</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
                 <th>Active</th>
-                <th>Archived</th>
+                <th>Archived</th>       
             </tr>
         </thead>    
         <tbody class="archive-table-notes">

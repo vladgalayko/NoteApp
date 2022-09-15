@@ -1,1 +1,28 @@
 @import '/style/table.css';
+
+.body {
+    margin: 20px;
+}
+.thead {
+    background-color: grey;
+    color: #fff;
+}
+form {
+    margin: 20px;
+}
+.edit--note {
+    border: none;
+    background-color: #fff;
+    background: none;
+}
+.archive {
+    border: none;
+    background-color: #fff;
+    background: none;
+}
+
+.remove--note {
+    border: none;
+    background-color: #fff;
+    background: none;
+}

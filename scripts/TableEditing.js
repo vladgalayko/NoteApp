@@ -50,8 +50,8 @@ export default class TableEditing {
 
         toolbar.innerHTML = `
         <div class="button-wrapper">
-            <button class="btn btn-sm btn-danger btn-cancel">Cancel</button>
-            <button class="btn btn-sm btn-primary btn-save">Save</button>
+            <button class="btn btn-sm btn-dark btn-cancel">Cancel</button>
+            <button class="btn btn-sm btn-secondary btn-save">Save</button>
         </div>
         `
 

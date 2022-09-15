@@ -15,9 +15,9 @@ import TableEditing from './tableEditing.js';
                 <td>${category}</td>
                 <td>${content}</td>
                 <td>Empty for the time being</td>
-                <th><button class="edit--note"><i class="fa-solid fa-pen-to-square"></i></button></th>
-                <th><button class="archive"><i></i></i></button></td>
-                <th><button class="remove--note"><i class="fa-solid fa-trash"></i></button></th>
+                <th><button class="edit--note"><i class="bi bi-pen-fill"></i></button></th>
+                <th><button class="archive"><i class="bi bi-archive-fill"></i></button></td>
+                <th><button class="remove--note"><i class="bi bi-trash-fill"></i></button></th>
             </tr>    
 `;
         table.insertAdjacentHTML("beforeend", html)
@@ -63,7 +63,7 @@ function createNote() {
     const noteText = document.createElement('td');
     noteText.textContent = nameInput.value;
     const created = document.createElement('td');
-    created.textContent = new Date();
+    created.textContent = new Date().toString().slice(0, 15);
     const categoryTd = document.createElement('td');
     categoryTd.textContent = category.value;
     const contentTd = document.createElement('td');
@@ -72,14 +72,14 @@ function createNote() {
     timeBeing.textContent = "Empty for the time being"
     const editBtnTh = document.createElement('th');
     const editBtn = document.createElement('button');
-    editBtn.classList = "edit--note";
+    editBtn.classList = "edit--note bi bi-pen-fill";
     const arcBtnTh = document.createElement('th');
     const arcBtn = document.createElement('button');
-    arcBtn.classList = "archive";
+    arcBtn.classList = "archive bi bi-archive-fill";
     arcBtn.onclick = archiveNote;
     const remBtnTh = document.createElement('th');
     const remBtn = document.createElement('button');
-    remBtn.classList = "remove--note";
+    remBtn.classList = "remove--note bi bi-trash-fill";
     remBtn.onclick = removeNote;
     
     note.appendChild(noteText);
@@ -102,7 +102,15 @@ form.addEventListener('submit', (e) => {
 
     const note = createNote();
     
-    table.appendChild(note)
+
+    if(nameInput.value === '') {
+        alert("Enter the name please!")
+    } else {
+        table.appendChild(note)
+    }
+    editing.init(); 
+    nameInput.value = '';
+    content.value = '';
 })
 
 
